@@ -13,7 +13,7 @@
 		E2056D2C28AB5BD300631258 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2056D2A28AB5BD300631258 /* Main.storyboard */; };
 		E2056D2E28AB5BD400631258 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2056D2D28AB5BD400631258 /* Assets.xcassets */; };
 		E2056D3128AB5BD400631258 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2056D2F28AB5BD400631258 /* LaunchScreen.storyboard */; };
-		E2056D3C28AB5CB200631258 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2056D3B28AB5CB200631258 /* GridView.swift */; };
+		E2056D4328AC97CA00631258 /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2056D4228AC97CA00631258 /* GridView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,7 +25,7 @@
 		E2056D2D28AB5BD400631258 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2056D3028AB5BD400631258 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E2056D3228AB5BD400631258 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E2056D3B28AB5CB200631258 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GridView.swift; path = ../../../GridView.swift; sourceTree = "<group>"; };
+		E2056D4228AC97CA00631258 /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +58,7 @@
 		E2056D2328AB5BD300631258 /* HighFive */ = {
 			isa = PBXGroup;
 			children = (
-				E2056D3828AB5BF900631258 /* Views */,
+				E2056D4428AC97D400631258 /* Views */,
 				E2056D2428AB5BD300631258 /* AppDelegate.swift */,
 				E2056D2628AB5BD300631258 /* SceneDelegate.swift */,
 				E2056D2828AB5BD300631258 /* ViewController.swift */,
@@ -70,13 +70,12 @@
 			path = HighFive;
 			sourceTree = "<group>";
 		};
-		E2056D3828AB5BF900631258 /* Views */ = {
+		E2056D4428AC97D400631258 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				E2056D3B28AB5CB200631258 /* GridView.swift */,
+				E2056D4228AC97CA00631258 /* GridView.swift */,
 			);
-			name = Views;
-			path = ../../test/HighFive/Views;
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +151,7 @@
 			files = (
 				E2056D2928AB5BD300631258 /* ViewController.swift in Sources */,
 				E2056D2528AB5BD300631258 /* AppDelegate.swift in Sources */,
-				E2056D3C28AB5CB200631258 /* GridView.swift in Sources */,
+				E2056D4328AC97CA00631258 /* GridView.swift in Sources */,
 				E2056D2728AB5BD300631258 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
