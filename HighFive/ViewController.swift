@@ -17,7 +17,8 @@ class ViewController: UIViewController {
         
         let gridView = GridView(position: CGPoint(x: 0, y: 0), dimension: 5, tilePadding: 3, tileWidth: 60)
         view.addSubview(gridView)
-        gridView.center.x = view.center.x
+
+        gridView.center.x = view.convert(view.center, from: view.superview).x
         gridView.center.y = 300
     }
 
