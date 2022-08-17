@@ -8,12 +8,21 @@
 import UIKit
 
 class GridView: UIView {
+    var tilePadding: CGFloat
+    var tileWidth: CGFloat
+    var dimension: Int
+    var position: CGPoint
+    
     init(position: CGPoint, dimension: Int, tilePadding: CGFloat, tileWidth: CGFloat) {
-        let parentWidth = CGFloat(dimension) * (tileWidth + tilePadding)
-        // TODO: Or tilePadding * 2?
+        self.tilePadding = tilePadding
+        self.tileWidth = tileWidth
+        self.dimension = dimension
+        self.position = position
+        
+        let parentWidth = (CGFloat(dimension) * tileWidth) + (CGFloat(dimension) * tilePadding)
         
         super.init(frame: CGRect(x: position.x, y: position.y, width: parentWidth, height: parentWidth))
-        var xCursor: CGFloat = tilePadding
+        var xCursor: CGFloat = tilePadding / 2 // Tile Padding of 4 (for e.g.) is actually 2 on each side.
         var yCursor: CGFloat
 
         for _ in 0..<dimension {
