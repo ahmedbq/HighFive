@@ -13,6 +13,8 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        // TODO: Either disallow layout view or implement viewWillTransition(to:with:)
     }
     
     override func viewDidLayoutSubviews() {
