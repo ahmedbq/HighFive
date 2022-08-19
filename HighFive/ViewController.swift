@@ -17,6 +17,12 @@ class ViewController: UIViewController {
         // TODO: Either disallow layout view or implement viewWillTransition(to:with:)
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        print("inside viewWillTransition")
+    }
+    
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
@@ -34,6 +40,18 @@ class ViewController: UIViewController {
         gridView.layer.position.x = view.center.x
         
         view.addSubview(gridView)
+    }
+    
+    override var shouldAutorotate: Bool {
+        return false
+    }
+
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.portrait
+    }
+
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return UIInterfaceOrientation.portrait
     }
 
 
